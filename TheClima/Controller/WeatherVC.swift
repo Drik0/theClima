@@ -10,16 +10,20 @@ import UIKit
 
 class WeatherVC: UIViewController {
 
+    @IBOutlet weak var temperatureLabel: UILabel!
+    
+    @IBOutlet weak var cityLabel: UILabel!
+    
+    @IBOutlet weak var iconImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func switchBtnPressed(_ sender: UIButton) {
     }
-
-
+    
+    
 }
 

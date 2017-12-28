@@ -36,6 +36,7 @@
                                 </constraints>
                                 <state key="normal" image="switch"/>
                                 <connections>
+                                    <action selector="switchBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4J8-VS-I1I"/>
                                     <segue destination="twU-gy-5Lu" kind="show" id="1W3-EE-gv6"/>
                                 </connections>
                             </button>
@@ -90,6 +91,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="eMb-Hu-aGm" id="L2f-a1-pVP"/>
+                        <outlet property="iconImage" destination="Avq-15-C1W" id="h5H-mm-cU0"/>
+                        <outlet property="temperatureLabel" destination="KlP-c8-jan" id="vJ7-gI-mAl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,6 +127,9 @@
                                 <state key="normal" title="Change City">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeCityBtnPressed:" destination="twU-gy-5Lu" eventType="touchUpInside" id="mHU-Ky-wrZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3L-HC-AG7">
                                 <rect key="frame" x="16" y="36" width="32" height="32"/>
@@ -129,6 +138,9 @@
                                     <constraint firstAttribute="width" constant="32" id="lOx-Dc-YuF"/>
                                 </constraints>
                                 <state key="normal" image="left"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="twU-gy-5Lu" eventType="touchUpInside" id="lHh-8O-ZNH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -147,6 +159,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HcH-D4-fyS"/>
                     </view>
+                    <connections>
+                        <outlet property="changeCityTextField" destination="vgz-qz-O28" id="RDH-Gq-bZ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghg-A3-00K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
