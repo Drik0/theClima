@@ -18,11 +18,14 @@ class ChangeCityVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-    }
     
     @IBAction func changeCityBtnPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
     }
     
 }
