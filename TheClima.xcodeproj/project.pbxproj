@@ -12,6 +12,7 @@
 		31E020561FF3F41100EDF57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E020541FF3F41100EDF57D /* Main.storyboard */; };
 		31E020581FF3F41100EDF57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E020571FF3F41100EDF57D /* Assets.xcassets */; };
 		31E0205B1FF3F41100EDF57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E020591FF3F41100EDF57D /* LaunchScreen.storyboard */; };
+		31F8A2F81FF5453A006CD101 /* ChangeCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8A2F71FF5453A006CD101 /* ChangeCityVC.swift */; };
 		A3B1BB74FA33F336F975BFEA /* Pods_TheClima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952436E4CE8B91393F313F84 /* Pods_TheClima.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		31E020571FF3F41100EDF57D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31E0205A1FF3F41100EDF57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31E0205C1FF3F41100EDF57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F8A2F71FF5453A006CD101 /* ChangeCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChangeCityVC.swift; path = TheClima/Controller/ChangeCityVC.swift; sourceTree = SOURCE_ROOT; };
 		6FECD21D8B8D99507A64AC12 /* Pods-TheClima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheClima.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheClima/Pods-TheClima.debug.xcconfig"; sourceTree = "<group>"; };
 		952436E4CE8B91393F313F84 /* Pods_TheClima.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheClima.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC8A1CE4C92DBF096859090 /* Pods-TheClima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheClima.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheClima/Pods-TheClima.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				31E020501FF3F41100EDF57D /* AppDelegate.swift */,
+				31F8A2F71FF5453A006CD101 /* ChangeCityVC.swift */,
 				31E020521FF3F41100EDF57D /* WeatherVC.swift */,
 			);
 			path = Controller;
@@ -247,6 +250,7 @@
 			files = (
 				31E020531FF3F41100EDF57D /* WeatherVC.swift in Sources */,
 				31E020511FF3F41100EDF57D /* AppDelegate.swift in Sources */,
+				31F8A2F81FF5453A006CD101 /* ChangeCityVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

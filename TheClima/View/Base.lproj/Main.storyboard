@@ -11,6 +11,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
             <string>AvenirNext-Regular</string>
         </array>
     </customFonts>
@@ -34,6 +35,9 @@
                                     <constraint firstAttribute="height" constant="64" id="Yr7-8T-XOe"/>
                                 </constraints>
                                 <state key="normal" image="switch"/>
+                                <connections>
+                                    <segue destination="twU-gy-5Lu" kind="show" id="1W3-EE-gv6"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnM-p0-Rgn" userLabel="Container View">
                                 <rect key="frame" x="16" y="160" width="343" height="491"/>
@@ -91,10 +95,69 @@
             </objects>
             <point key="canvasLocation" x="38.848920863309353" y="39.928057553956833"/>
         </scene>
+        <!--Change CityVC-->
+        <scene sceneID="lUA-Xm-oOp">
+            <objects>
+                <viewController id="twU-gy-5Lu" customClass="ChangeCityVC" customModule="TheClima" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OBs-uO-5q1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xLS-0V-Yss">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgz-qz-O28">
+                                <rect key="frame" x="94" y="120" width="187" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMP-Ke-9QH">
+                                <rect key="frame" x="122" y="180" width="131" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="FvX-98-2Do"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                <state key="normal" title="Change City">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3L-HC-AG7">
+                                <rect key="frame" x="16" y="36" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="A5w-8j-jY8"/>
+                                    <constraint firstAttribute="width" constant="32" id="lOx-Dc-YuF"/>
+                                </constraints>
+                                <state key="normal" image="left"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vgz-qz-O28" firstAttribute="leading" secondItem="HcH-D4-fyS" secondAttribute="leading" constant="94" id="6N0-75-Np1"/>
+                            <constraint firstItem="mMP-Ke-9QH" firstAttribute="centerX" secondItem="vgz-qz-O28" secondAttribute="centerX" id="7xX-2n-7aV"/>
+                            <constraint firstItem="HcH-D4-fyS" firstAttribute="trailing" secondItem="xLS-0V-Yss" secondAttribute="trailing" id="LTC-f2-X26"/>
+                            <constraint firstItem="xLS-0V-Yss" firstAttribute="leading" secondItem="HcH-D4-fyS" secondAttribute="leading" id="M7R-py-N4w"/>
+                            <constraint firstItem="HcH-D4-fyS" firstAttribute="bottom" secondItem="xLS-0V-Yss" secondAttribute="bottom" id="WZe-yU-ZOC"/>
+                            <constraint firstItem="mMP-Ke-9QH" firstAttribute="top" secondItem="vgz-qz-O28" secondAttribute="bottom" constant="30" id="ap9-PQ-TNz"/>
+                            <constraint firstItem="vgz-qz-O28" firstAttribute="top" secondItem="HcH-D4-fyS" secondAttribute="top" constant="100" id="gAe-UN-k8s"/>
+                            <constraint firstItem="HcH-D4-fyS" firstAttribute="trailing" secondItem="vgz-qz-O28" secondAttribute="trailing" constant="94" id="kDE-C3-jIR"/>
+                            <constraint firstItem="a3L-HC-AG7" firstAttribute="top" secondItem="HcH-D4-fyS" secondAttribute="top" constant="16" id="o0y-J7-fyj"/>
+                            <constraint firstItem="a3L-HC-AG7" firstAttribute="leading" secondItem="HcH-D4-fyS" secondAttribute="leading" constant="16" id="uQD-yE-GNp"/>
+                            <constraint firstItem="xLS-0V-Yss" firstAttribute="top" secondItem="HcH-D4-fyS" secondAttribute="top" id="xSr-HM-17q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HcH-D4-fyS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghg-A3-00K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.60000000000002" y="38.23088455772114"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="500" height="755"/>
+        <image name="cityBackground" width="600" height="399"/>
         <image name="cloudy2" width="64" height="64"/>
+        <image name="left" width="32" height="32"/>
         <image name="switch" width="64" height="64"/>
     </resources>
 </document>
