@@ -110,7 +110,8 @@ class WeatherVC: UIViewController, CLLocationManagerDelegate, ChangeCityDelegate
     
     func userChangeCity(city: String) {
         
-        print(city)
+        let params : [String : String] = ["q" : city, "appid" : APP_ID]
+        getWeatherData(url: WEATHER_URL, parameters: params)
         
     }
     
