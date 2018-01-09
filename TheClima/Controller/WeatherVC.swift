@@ -11,7 +11,7 @@ import CoreLocation
 import Alamofire
 import SwiftyJSON
 
-class WeatherVC: UIViewController, CLLocationManagerDelegate {
+class WeatherVC: UIViewController, CLLocationManagerDelegate, ChangeCityDelegate {
 
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
@@ -72,7 +72,7 @@ class WeatherVC: UIViewController, CLLocationManagerDelegate {
     func updateUI() {
         
         cityLabel.text = weatherDataModel.city
-        temperatureLabel.text = String(weatherDataModel.temperature)
+        temperatureLabel.text = String(weatherDataModel.temperature) + "º"
         iconImage.image = UIImage(named: weatherDataModel.weatherIconName)
         
     }
@@ -108,6 +108,22 @@ class WeatherVC: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    func userChangeCity(city: String) {
+        
+        print(city)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showChangeVC" {
+            
+            let destinationVC = segue.destination as! ChangeCityVC
+            destinationVC.delegate = self
+            
+        }
+        
+    }
     
 }
 

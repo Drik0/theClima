@@ -37,7 +37,7 @@
                                 <state key="normal" image="switch"/>
                                 <connections>
                                     <action selector="switchBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4J8-VS-I1I"/>
-                                    <segue destination="twU-gy-5Lu" kind="show" id="1W3-EE-gv6"/>
+                                    <segue destination="twU-gy-5Lu" kind="show" identifier="showChangeVC" id="1W3-EE-gv6"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnM-p0-Rgn" userLabel="Container View">

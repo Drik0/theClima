@@ -8,10 +8,17 @@
 
 import UIKit
 
+protocol ChangeCityDelegate {
+    
+    func userChangeCity(city: String)
+    
+}
+
 class ChangeCityVC: UIViewController {
 
     @IBOutlet weak var changeCityTextField: UITextField!
     
+    var delegate : ChangeCityDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +27,14 @@ class ChangeCityVC: UIViewController {
     }
     
     @IBAction func changeCityBtnPressed(_ sender: UIButton) {
+        
+        let cityName = changeCityTextField.text!
+            
+        delegate?.userChangeCity(city: cityName)
+        
+        dismiss(animated: true, completion: nil)
+        
+        
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {
